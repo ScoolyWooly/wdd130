@@ -1,0 +1,15 @@
+#first {
+    color:rgb(211, 44, 44);
+    font-size: 32px;
+    font-weight: bold;
+
+}
+.plain {
+    color:rgb(61, 91, 81);
+}
+#last {
+    background-color: aquamarine;
+}
+
+
+
