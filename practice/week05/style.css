@@ -1,0 +1,17 @@
+img {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+}
+
+p {
+    border: 10px ridge rgb(186, 180, 186);
+    padding: 50px;
+    background-color: rgb(114, 148, 180);
+    margin: 100px auto;
+    width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-style: italic;
+}
