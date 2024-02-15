@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+
+#content {
+    display: grid; /*tells css that we want to display a grid, but now we need to tell it how many columns*/
+    grid-template-columns: 1fr 1fr; /*The rows are automatically created, but it you want to do rows, then you use the "grid-template-rows"*/
+    
+} /*1fr divides the whole page by how many 1fr's are*/
+#content section {
+    width: 200px;
+    height: 200px; /*%% will make it take up as much space as it parent is, where as px gives it a set ammount*/
+}
+/*will always order our boxes as they are stated in html, unless we tell it otherise*/
+.red {
+    background-color:#F35325;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.blue {
+    background-color:#05A6F0;
+    grid-column:  2/3;
+    grid-row: 2/3;
+}
+.yellow{
+    background-color:#FFBA08;
+    grid-column: 3/4;
+    grid-row: 3/4
+}
+.green {
+    
+    background-color:#81BC06;
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
