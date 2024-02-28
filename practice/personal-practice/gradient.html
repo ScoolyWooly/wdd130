@@ -4,39 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <style>
-        body {
-            background-image: linear-gradient(to right, rgb(171, 237, 100) , rgb(134, 221, 255));
-            display: grid; 
-            grid-template-columns: 1fr 0.9fr 1fr; 
-            grid-template-rows: 0.8fr 1.5fr 0.8fr; 
-            gap: 0px 0px; 
-            grid-template-areas: 
-            ". . ."
-            ". . ."
-            ". . ."; 
-        }
-        #calculator-base {
-            grid-column:2/3;
-            grid-row: 2/3;
-            content:center;
-            width: 60%;
-            height: 300px;
-            background-color: rgb(217, 218, 213, 0.2fr);
-        }
-    </style>
+    <link href="gradient-style.css" rel="stylesheet">
+    <script src="gradient-script.js"></script>
 </head>
 <body>
-    <section id="calculator-base">
-    <button id="bt1">1</button>
-    <button id="bt1">2</button>
-    <button id="bt1">3</button>
-    <button id="bt1">4</button>
-    <button id="bt1">5</button>
-    <button id="bt1">6</button>
-    <button id="bt1">7</button>
-    <button id="bt1">8</button>
-    <button id="bt1">9</button>
-    <button id="bt1">0</button>
+    <div id="calculator-base">
+        <label id="result">Result</label>
+
+        <button id="nine" onclick="appendNum(9)">9</button> <!--Setting the numbers-->
+        <button id="eight" onclick="appendNum(8)">8</button>
+        <button id="seven" onclick="appendNum(7)">7</button>
+        <button id="six" onclick="appendNum(6)">6</button>
+        <button id="five" onclick="appendNum(5)">5</button>
+        <button id="four" onclick="appendNum(4)">4</button>
+        <button id="three" onclick="appendNum(3)">3</button>
+        <button id="two" onclick="appendNum(2)">2</button>
+        <button id="one" onclick="appendNum(1)">1</button>
+        <button id="zero" onclick="appendNum(0)">0</button>
+
+        <button id="equals" onclick="calculate()">=</button> <!--when all the math is actually done-->
+
+        <button id="multiply" onclick="setOperator('*')">*</button> <!--telling the computer what operation to use-->
+        <button id="divide" onclick="setOperator('/')">/</button>
+        <button id="add" onclick="setOperator('+')">+</button>
+        <button id="subtract" onclick="setOperator('-')">-</button>
+    </div>
 </body>
 </html>

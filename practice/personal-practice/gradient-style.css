@@ -1,0 +1,114 @@
+body {
+    background-image: linear-gradient(to right, rgb(171, 237, 100) , rgb(134, 221, 255));
+    display: grid; 
+    grid-template-columns: 1.35fr 0.9fr 1fr; 
+    grid-template-rows: 0.8fr 1.5fr 0.8fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . ."; 
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    padding:5%;
+}
+
+button {
+    display: inline-flex;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    border-color:rgba(235, 236, 225, 0.5);
+    background-color: rgba(235, 236, 225, 0.5);
+}
+
+
+#calculator-base {
+    grid-column:2/3;
+    grid-row: 2/3;
+    content:center;
+    width: 250px;
+    height: 310px;
+    background-color: rgb(217, 218, 213, 00.5);
+    border-radius: 15px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*4 columns and 5 rows*/
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+label {
+    cursor:text;
+    grid-column:1/5;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+#equals {
+ grid-column: 1/3;
+ grid-row: 5/6;
+ width: 100%;
+}
+#add {
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+#subtract {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+#multiply {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+#divide {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+#zero {
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+#one {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+#two {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+#three {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+#four {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#five {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#six {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#seven {
+    grid-column: 1/2;
+    grid-row: 2/3
+}
+#eight {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#nine {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
