@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
 body {
     background-image: linear-gradient(to right, rgb(171, 237, 100) , rgb(134, 221, 255));
     display: grid; 
@@ -48,7 +50,9 @@ label {
     grid-row: 1/2;
     text-align: center;
     font-size: 2em;
-    font-weight: bold;
+    font-family: "Anta", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 #equals {
  grid-column: 1/3;
