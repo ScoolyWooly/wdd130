@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link href="gradient-style.css" rel="stylesheet">
-    <script src="gradient-script.js"></script>
+    <link href="calculator-style.css" rel="stylesheet">
+    <script src="calculator-script.js"></script>
 </head>
 <body>
     <div id="calculator-base">
@@ -24,10 +24,10 @@
 
         <button id="equals" onclick="calculate()">=</button> <!--when all the math is actually done-->
 
-        <button id="multiply" onclick="setOperator('*')">*</button> <!--telling the computer what operation to use-->
-        <button id="divide" onclick="setOperator('/')">/</button>
-        <button id="add" onclick="setOperator('+')">+</button>
-        <button id="subtract" onclick="setOperator('-')">-</button>
+        <button id="multiply" onclick="setOperator('*', numberString)">*</button> <!--telling the computer what operation to use-->
+        <button id="divide" onclick="setOperator('/', numberString)">/</button>
+        <button id="add" onclick="setOperator('+', numberString)">+</button>
+        <button id="subtract" onclick="setOperator('-', numberString)">-</button>
     </div>
 </body>
 </html>
