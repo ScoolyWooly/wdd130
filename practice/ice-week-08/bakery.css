@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+#content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: antiquewhite;
+}
+#header-content {
+    display: grid;
+    grid-template-columns: 100px 1fr 25px;
+    gap: 1em;
+}
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+nav li {
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+#product-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+@media screen and (max-width: 450px) { /*anything 450x or smaller will have these rules.
+     so since this is after the product-grid rule, and it happens with the max-screen-width is less than 450* so that the page changes to 2 columsn*/
+    #product-grid {        
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
+@media screen and (max-width: 350px) { /*anything 3i50x or smaller will have these rules.
+    so since this is after the product-grid rule, and it happens with the max-screen-width is less than 350* so that the page changes to 2 columsn*/
+   #product-grid {        
+       grid-template-columns: 1fr;
+       
+   }
+}
