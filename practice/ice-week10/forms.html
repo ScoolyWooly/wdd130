@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /*since this is a one page website, or because it is unique, it can have a style tag built in*/
+
+        * {
+            box-sizing: border-box;
+        }
+
+        label, input, textarea, button {
+            width: 300px;
+            display: block;
+        }
+        input, textarea {
+            margin-bottom: 1em;
+        }
+    </style>
+
+</head>
+<body>
+
+    <form action="thankyou.html" method="get">
+        <label for="fname">First Name:</label>
+        <input id="fname" name="fname" type="file" placeholder="Joseph" required>
+        <label for="lname">Last Name:</label>
+        <input id="lname" name="lname" type="text" placeholder="Smith" required>
+
+        <label for="question">Question:</label>
+        <textarea name="question" id="question" cols="30" rows="10" placeholder="Your question here..." required></textarea>
+
+        <button type="submit">Send in Question</button>
+    </form>
+</body>
+</html>
