@@ -50,6 +50,7 @@ nav a:hover {
 }
 .questions {
     grid-column: 1/2;
+    
 }
 .answers {
     grid-column: 1/2;
