@@ -57,16 +57,17 @@ main {
     width: auto;
 }
 
-#reading-panel section {
-    justify-content: center;
+#reading-2nd-panel {
+    justify-items: center;
     margin: auto;
     background-color: #f2ecda;
     width: 95%;
-    height: 100vh;
+    height: 100%;
     text-wrap: auto;
     font-size: 1.25em;
-    
 }
+
+
 
 h1 {
     justify-self: center;
@@ -88,9 +89,13 @@ p {
     object-fit: contain;
     display: inline-flex;
 }
+
+#picture-top-right {
+    float:right;
+}
+
 * {
     margin: 0;
     padding: 0;
     
 }
-
