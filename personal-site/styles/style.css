@@ -16,7 +16,7 @@ body {
 
 .second-layer {
     background-color: #a4de7cff;
-    height: 100vw;
+    height: 200vw;
     min-height: 100%;
     margin-top: 0;
 }
@@ -41,12 +41,12 @@ header section nav ul{
 }
 
 button {
-  justify-content: center;
-  width: 200px; 
-  height: 50px; 
-  background-color: #f2ecda;
-  border-radius: 10%;
-  border-style: hidden;
+    border-radius: 20%;
+    justify-content: center;
+    width: 200px; 
+    height: 50px; 
+    background-color: #f2ecda;
+    border-style: hidden;
 }
 
 main {
@@ -68,7 +68,7 @@ main {
     justify-items: center;
     margin: auto;
     background-color: #f2ecda;
-    width: 95%;
+    width:95%;
     height: 100%;
     text-wrap: auto;
     font-size: 1.25em;
@@ -91,18 +91,25 @@ p {
 }
 
 .main-body-images {
-    height: 80% fit-content;
+    height: 20% fit-content;
     width: auto;
     object-fit: contain;
     display: inline-flex;
+    padding: 5%;
+
 }
 
-#picture-top-right {
-    float:right;
-}
+
 
 * {
     margin: 0;
     padding: 0;
     
+}
+
+footer {
+    display: block;
+    color:black;
+    background-color: #a4de7cff;
+    width: 100%;
 }
