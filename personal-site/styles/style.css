@@ -11,17 +11,18 @@ body {
     display: grid;
     grid-template-columns: 340px 1fr;
     grid-template-rows: 5fr; 
-    gap: 100px;
+    column-gap: 100px;
  }
 
 .second-layer {
-    background-color: #a4de7cff;
-    height: 200vw;
+    
     min-height: 100%;
     margin-top: 0;
 }
 
 header {
+    height: 100%;
+    background-color: #a4de7cff;
     grid-column: 1/2;
     box-sizing: border-box;
 }
@@ -48,9 +49,12 @@ button {
     background-color: #f2ecda;
     border-style: hidden;
 }
+button:hover {
+    background-color: #458776ff;
+}
 
 main {
-    max-height: 300vh;
+   
     margin: 0 auto;
     padding: 0;
 }
@@ -60,16 +64,15 @@ main {
     background-color: #a4de7cff;
     grid-column: 2/3;
     margin-right: 100px;
-    height: 100vh;
     width: auto;
 }
 
-#reading-2nd-panel {
+#reading-2nd-panel { /*This is the creamy panel that holds the main body of text*/
     justify-items: center;
     margin: auto;
     background-color: #f2ecda;
     width:95%;
-    height: 100%;
+    
     text-wrap: auto;
     font-size: 1.25em;
 }
@@ -82,7 +85,7 @@ h1 {
     padding: 30px
 }
 
-p {
+p {/*This is the positioning main body of text*/
     padding-left:30px;
     padding-right:30px;
     padding-bottom: 20px;
@@ -90,7 +93,7 @@ p {
 
 }
 
-.main-body-images {
+.main-body-images { /*This controls the images that should be wrapping with the text*/
     height: 20% fit-content;
     width: auto;
     object-fit: contain;
@@ -101,15 +104,45 @@ p {
 
 
 
-* {
-    margin: 0;
-    padding: 0;
-    
-}
 
 footer {
     display: block;
     color:black;
     background-color: #a4de7cff;
     width: 100%;
+    grid-column:1/3;
+    text-align: center;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+.dropbtn {
+    
+    background-color: #f2ecda;
+    color:black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f2ecda;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f2ecda;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #458776ff;}
