@@ -59,7 +59,7 @@ main {
     padding: 0;
 }
 
-#reading-panel {
+.reading-panel {
     box-sizing: border-box;
     background-color: #a4de7cff;
     grid-column: 2/3;
@@ -67,7 +67,7 @@ main {
     width: auto;
 }
 
-#reading-2nd-panel { /*This is the creamy panel that holds the main body of text*/
+#reading-2nd-panel { /*This is the creamy-colored panel that holds the main body of text*/
     justify-items: center;
     margin: auto;
     background-color: #f2ecda;
