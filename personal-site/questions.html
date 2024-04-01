@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elder Brinkerhoff</title>
     <link rel="stylesheet" href="styles/style.css">
-    <style>
-        .main-body-images {
-            max-width: 50%;
-        }
-    </style>
+    
 </head>
 <body>
     <header> <!--I want a vertical header like a sidebar, I really like that design because it makes better use of the space of the browser since my site is pretty simple-->
@@ -22,7 +18,7 @@
                 <!--This is where I will put the link ot the gallery page.-->
                 <ul><a href="questions.html"><button>Common Questions</button></a></ul>
                 <ul><div class="dropdown">
-                    <button class="dropbtn">Weekly Examples 1-2</button>
+                    <button class="dropbtn">Weekly Updates 1-9</button>
                     <div class="dropdown-content">
                         <a href="#">Example Week 1</a>
                         <a href="#">Example Week 2</a>
@@ -30,36 +26,41 @@
                     </div></ul>
             </nav>
 
-            <p id="dev-contact">dev@exampleemail.com</p>
+            
         </section>
     </header>
     <main>
-        <div class="second-layer">
-            <section id="reading-background">
-              <h1>Common Questions</h1>
-
-              <section id="questions-answers">
-                <p class="question">Question: Do we believe in Jesus Christ?</p>
-                    <label>Answer</label>
-                    <p class="answer" id="answer-for-q1">Yes! He is our Lord, our Redeemer, our God and elder Brother.</p>
-
-                <p class="question">Question: Are Mormons Christians?</p>
-                    <label>Answer</label>
-                    <p class="answer" id="answer-for-q2">Yes, we follow and worship Jesus Christ. We even prefer the full name of Christ's restored church: "The Church of Jesus Christ of Latter-day Saints"</p>
-
-                <p class="question">Question: Can Families really be together forever?</p>
-                    <label>Answer</label>
-                    <p class="answer" id="answer-for-q3">Yes they certainly can through the path that Jesus Christ outlines for us in his Restored Gospel, and by making covenants with him, we can live with our families forever if we want to!</p>
-
+        <div id="questions-div">
+            <div class="reading-panel">
+                <section id="reading-2nd-panel">
+                        
+                        <p class="question">Question: Do we believe in Jesus Christ?</p>
+                            
+                            <label class="answer-label">Answer:</label><p class="answer-text" id="answer-for-q1">Yes! He is our Lord, our Redeemer, our God and elder Brother.</p>
+            
+                        <p class="question">Question: Are Mormons Christians?</p>
+                            
+                            <label class="answer-label">Answer:</label><p class="answer-text" id="answer-for-q2">Yes, we follow and worship Jesus Christ. We even prefer the full name of Christ's restored church: "The Church of Jesus Christ of Latter-day Saints"</p>
+            
+                        <p class="question">Question: Can Families really be together forever?</p>
+                            
+                            <label class="answer-label">Answer:</label><p class="answer-text" id="answer-for-q3">Yes they certainly can through the path that Jesus Christ outlines for us in his Restored Gospel, and by making covenants with him, we can live with our families forever if we want to!</p>
                     
-                
-
-              </section>
-            </section>
+                </section>
+            </div>
         </div>
     </main>
     <footer>
         <a href="site-plan.html">Site Plan</a>
+
+        <div>
+            <p>Elder Brinkerhoff</p>
+            <p id="dev-contact">dev@exampleemail.com</p>
+        </div>
+
+
+
+
     </footer>
 </body>
 </html>
