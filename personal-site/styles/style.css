@@ -109,10 +109,13 @@ p {/*This is the positioning main body of text*/
     font-weight: bold;
 }
 .answer-label {
+    display: block;
     text-align: center;
     font-size: large;
     font-weight: bold;
-    padding-left: 30px;
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
     
 
@@ -121,9 +124,10 @@ p {/*This is the positioning main body of text*/
     height: 20% fit-content;
     width: auto;
     object-fit: contain;
-    display: inline-flex;
+    display: block;
     padding: 5%;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
