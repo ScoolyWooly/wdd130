@@ -9,25 +9,32 @@
 </head>
 <body>
     <header> <!--I want a vertical header like a sidebar, I really like that design because it makes better use of the space of the browser since my site is pretty simple-->
-        <section class="second-layer" id="button-list">
-            <img id="logo" src="images/elder-logo.png">
+        <div class="second-layer" id="button-list">
+            <img id="logo" src="images/elder-logo.png" alt="Logo of a Book of Scripture with a green bookmark">
 
-            <nav>        
-                <ul><a href="index.html"><button>Home</button></a></ul>
-                <ul><a href="about-me.html"><button>About Me</button></a></ul>
-                <!--This is where I will put the link ot the gallery page.-->
-                <ul><a href="questions.html"><button>Common Questions</button></a></ul>
-                <ul><div class="dropdown">
-                    <button class="dropbtn">Weekly Updates 1-9</button>
-                    <div class="dropdown-content">
-                        <a href="#">Example Week 1</a>
-                        <a href="#">Example Week 2</a>
+            <nav> 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                    <!--This is where I will put the link ot the gallery page.-->
+                    <li><a href="questions.html">Common Questions</a></li>
+                    <li>
+                        <div class="dropdown">
+                            Weekly Updates 1-9
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="#">Example Week 1</a></li>
+                                    <li><a href="#">Example Week 2</a></li>
+                                </ul>
                         
-                    </div></ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </nav>
 
             
-        </section>
+        </div>
     </header>
     <main>
         <div class="reading-panel">
@@ -44,14 +51,8 @@
     </main>
     <footer>
         <a href="site-plan.html">Site Plan</a>
-
-        <div>
-            <p>Elder Brinkerhoff</p>
-            <p id="dev-contact">dev@exampleemail.com</p>
-        </div>
-
-
-
+        <p>Elder Benjamin Brinkerhoff</p>
+        <p id="dev-contact">dev@exampleemail.com</p>
 
     </footer>
 </body>
